@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section class="banner" id="sec">
+		<header>
+			<a href="index.html" class="logo">{D}</a>
+			<div id="toggle" onclick="toggle()"></div>
+		</header>
+		<div class="content">
+			<h2>Hello World, <br> I'm <span>Dhruv Upadhyaya</span></h2>
+			<p>On a path of becoming a software developer.</p>
+			<a href="https://drive.google.com/file/d/1C5s6rnvWACwdGkwU38LA06lqH0OWH2WW/view" download target="_blank">Download Resume</a>
+		</div>
+		<ul class="sci">
+			<li><a href="https://www.instagram.com/dhruvupadhyaya94/" target="_blank"><img src="insta.png"></a></li>
+			<li><a href="https://github.com/DhruvUpadhyaya"target="_blank"><img src="github.jpg"></a></li>
+			<li><a href="https://www.linkedin.com/in/dhruv-upadhyaya-2b757416a/"target="_blank"><img src="linkedin.png"></a></li>
+		</ul>
+
+	</section>
+
+	<div id="navigation">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="error.html">Projects</a></li>
+			<li><a href="error.html">Skills</a></li>
+<!-- 			<li><a href="#">Portfolio</a></li> -->
+			<li><a href="error.html">Contact</a></li>
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+		function toggle(){
+			var sec = document.getElementById('sec');
+			var nav = document.getElementById('navigation');
+			sec.classList.toggle('active');
+			nav.classList.toggle('active');
+		}
+	</script>
+
+</body>
+</html>
